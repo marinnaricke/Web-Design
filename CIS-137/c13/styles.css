@@ -1,0 +1,112 @@
+﻿body 
+{
+    font-family:Calibri,sans-serif;
+    font-size:1em;
+    background-color:#000000;
+}
+
+#DivWrapper
+{
+    width:80%;
+    min-height:500px;
+    border:1px #5C6983 solid;
+    margin:auto;
+}
+
+header
+{
+    width:97%;
+    padding:1.5%;
+    min-height:149px;
+    border-bottom:1px #5C6983 solid;
+    color:#ffffff;
+    background-color:#89D7ED;
+    font-weight:bold;
+    font-size:2em;
+    text-align:center;
+    position:relative;
+    float:left;
+}
+
+nav
+{
+    width:97%;
+    padding:1.5%;
+    min-height:19px;
+    border-bottom:1px #5C6983 solid;
+    color:#000000;
+    font-weight:bold;
+    background-color:#C1D3C8;
+    font-size:1.2em;
+    position:relative;
+    float:left;
+}
+
+nav a:visited{color:#5C6983;}
+nav a:link{color:#ffffff;}
+nav a:active{color:#ffffff;}
+nav a:hover{font-weight:bold;color:#000000;}
+
+
+section
+{
+    width:97%;
+    padding:1.5%;
+    min-height:329px;
+    border-bottom:1px #5C6983 solid;
+    color:#ffffff;
+    font-weight:bold;
+    background-color:#6A5A5B;
+    position:relative;
+    float:left;
+}
+
+section header
+{
+    width:97%;
+    padding:1.5%;
+    min-height:24px;
+    border-bottom:1px #5C6983 solid;
+    color:#ffffff;
+    background-color:#89D7ED;
+    font-weight:bold;
+    font-size:1.4em;
+}
+
+section article
+{
+    width:44%;
+    padding:1.5%;
+    min-height:329px;
+    border:1px #5C6983 solid;
+    color:#ffffff;
+    font-weight:bold;
+    background-color:#6A5A5B;
+    position:relative;
+    float:left;
+    margin-right:1.5%;
+}
+
+#DivPhoto
+{
+    width:60%;
+    margin:auto;
+}
+
+#DivPhoto img
+{
+    width:100%;
+}
+
+footer
+{
+    width:97%;
+    padding:1.5%;
+    min-height:49px;
+    color:#ffffff;
+    background-color:#89D7ED;
+    font-size:.8em;
+    text-align:center;
+    position:relative;
+    float:left;
+}

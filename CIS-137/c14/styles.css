@@ -1,0 +1,68 @@
+﻿body 
+{
+    font-size:1em;
+    font-family:Calibri,sans-serif;
+    margin:0px;
+}
+
+#DivWrapper
+{
+    width:97.5%;
+    min-height:500px;
+    border:2px #5C6983 solid;
+    padding:1%;    
+    position:relative;
+    float:left;
+}
+
+header
+{
+    width:96%;
+    padding:2%;
+    min-height:123px;
+    text-align:center;
+    font-size:2em;
+    border-bottom:1px #5C6983 solid;
+    margin-bottom:1%;
+    position:relative;
+    float:left;
+}
+
+section
+{
+    width:96%;
+    padding:2%;
+    min-height:348px;
+    border-bottom:1px #5C6983 solid;
+    margin-bottom:1%;
+}
+
+.OneThirdColumn
+{
+    width:28%;
+    padding:2%;
+    min-height:298px;
+    border:1px orange solid;
+    position:relative;
+    float:left;
+    margin-right:1%
+}
+
+.TwoThirdsColumn
+{
+    width:62%;
+    padding:2%;
+    min-height:298px;
+    border:1px brown solid;
+    position:relative;
+    float:left;
+}
+
+
+footer
+{
+    width:96%;
+    padding:2%;
+    min-height:23px;
+    margin-bottom:1%
+}
