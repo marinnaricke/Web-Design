@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lab14-RickettsUy</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function displayBannerAd()
+        {
+            var timer = setInterval("showBannerAd();", 4000);
+        }
+
+	function showBannerAd()
+	{
+	    var rn;
+            rn = Math.floor(Math.random() * 5) + 1;
+            document.getElementById("bannerPhotos").src = "images/banner"
+                + rn + ".jpg";
+	}
+    </script>
+</head>
+<body onload="displayBannerAd();">
+    <div id="DivWrapper">
+        <header>
+            Lab 14
+            <p></p>
+            <img id="bannerPhotos" src="images/banner1.jpg" alt="photo" />
+        </header>
+        <nav class="topNav">
+            <ul class="menubar">
+                <li><a href="default.htm">Home</a></li>
+                <li><a href="page1.htm">setTimeout</a></li>
+                <li><a href="page2.htm" class="selected">setInterval</a></li>
+            </ul>
+        </nav>
+        <section>
+            Using a random number and the setInterval method to display banner ads.
+            <p></p>
+            <form id="formSetInterval" action="page2.htm" method="post">
+
+
+            </form>
+        </section>
+        <footer>
+            CIS-137 RickettsUy
+        </footer>
+    </div>
+</body>
+</html>

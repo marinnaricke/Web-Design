@@ -1,0 +1,101 @@
+﻿body 
+{
+    font-size:1em;
+    font-family:Calibri,sans-serif;
+    background-color:#D7E2E9;
+}
+
+#DivWrapper
+{
+    width:80%;
+    margin:auto;
+    min-height:700px;
+    padding:.5%;
+    background-color:#D7E2E9;
+}
+
+header
+{
+    width:97%;
+    min-height:150px;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:1.5%;
+    background-color:#ffffff;
+    color:#4086AA;
+    font-size:1.5em;
+    text-align:center;
+    position:relative;
+    float:left;
+}
+
+.topNav
+{
+    width:100%;
+    min-height:35px;
+    background-color:#87907D;
+    color:#ffffff;
+    border:1px solid black;
+    position:relative;
+    float:left;
+}
+
+.menubar
+{
+    list-style:none;
+    margin-top:0px;
+}
+
+.menubar li
+{
+    position:relative;
+    float:left;
+    min-width:32%;
+    text-align:center;
+}
+
+.menubar a{text-decoration:none;display:block;min-height:35px;}
+
+.menubar a:visited{color:#ffffff;}
+.menubar a:link{color:#ffffff;}
+.menubar a:hover{color:#4086AA;background-color:white;font-weight:bold;}
+.menubar a:active{color:#ffffff;}
+
+.selected
+{
+    background-color:#1F4864;
+    color:#9C0063;
+}
+
+section
+{
+    width:97%;
+    min-height:500px;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:1.5%;
+    background-color:#ffffff;
+    color:#4086AA;
+    font-family:'Lucida Bright';
+    text-align:center;
+    position:relative;
+    float:left;
+}
+
+#seagullImage
+{
+    visibility:hidden;
+}
+
+footer
+{
+    width:97%;
+    min-height:35px;
+    border:1px solid black;
+    padding:1.5%;
+    background-color:#ffffff;
+    text-align:center;
+    position:relative;
+    float:left;
+}

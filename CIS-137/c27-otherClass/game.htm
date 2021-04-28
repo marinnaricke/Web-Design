@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Game</title>
+    <style type="text/css">
+        #DivMole
+        {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+        }
+    </style>
+    <script type="text/javascript">
+        function startTimer()
+        {
+            gameTimer = window.setInterval("moveBlock()", 1000);
+        }
+
+        function moveBlock()
+        {
+            //Create variables
+            var rnLeft;
+            var rnTop;
+
+            //Generate random #s
+            rnLeft = Math.floor(Math.random() * 500) + 100;
+            rnTop = Math.floor(Math.random() * 300) + 100;
+
+            //Move DivBlock
+            document.getElementById("DivMole").style.position = "relative";
+            document.getElementById("DivMole").style.left = rnLeft + "px";
+            document.getElementById("DivMole").style.top = rnTop + "px";
+        }
+
+        function stopTimer()
+        {
+            clearInterval(gameTimer);
+            document.getElementById("DivMole").style.left = "100px";
+            document.getElementById("DivMole").style.top = "100px";
+        }
+
+        function gotMe()
+        {
+            window.alert("You got me!");
+            clearInterval(gameTimer);
+        }
+
+    </script>
+</head>
+<body>
+    <form id="formGame" action="game.htm" method="post">
+        <input id="btnStart" type="button" value="Click Here To Start" onclick="startTimer();" />
+        <input id="btnStop" type="button" value="Click Here To Stop" onclick="stopTimer();" />
+    </form>
+    <div id="DivMole" onclick="gotMe();">
+
+    </div>
+
+</body>
+</html>

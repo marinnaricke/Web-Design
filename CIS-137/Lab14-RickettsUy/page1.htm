@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lab14-RickettsUy</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function startTimer()
+        {
+            window.alert("Click OK and then wait for it!");
+            var timer = setTimeout("showImage();", 5000);
+        }
+
+        function showImage()
+        {
+            document.getElementById("seagullImage").style.visibility = "visible";
+        }
+    </script>
+</head>
+<body>
+    <div id="DivWrapper">
+        <header>
+            Lab 14
+        </header>
+        <nav class="topNav">
+            <ul class="menubar">
+                <li><a href="default.htm">Home</a></li>
+                <li><a href="page1.htm" class="selected">setTimeout</a></li>
+                <li><a href="page2.htm">setInterval</a></li>
+            </ul>
+        </nav>
+        <section>
+            Using setTimeout
+            <p></p>
+            <form id="formTimeOut" action="page1.htm" method="post">
+                <img id="seagullImage" src="images/seagull.JPG" />
+                <p></p>
+                <input type="button" id="ShowImageButton"
+                       value="Show image" onclick="startTimer();" />
+            </form>
+        </section>
+        <footer>
+            CIS-137 RickettsUy
+        </footer>    
+    </div>
+</body>
+</html>
