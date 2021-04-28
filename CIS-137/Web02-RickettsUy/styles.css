@@ -1,0 +1,271 @@
+﻿body 
+{
+    font-size:1em;
+    font-family:Calibri,sans-serif;
+    background-color:#990033;
+}
+
+#DivWrapper
+{
+    width:80%;
+    margin:auto;
+    min-height:900px;
+    padding:.5%;
+    background-color:#990033;
+}
+
+#DivLogo
+{
+    width:30%;
+    position:relative;
+    float:left;
+}
+
+header
+{
+    width:97%;
+    min-height:90px;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:1.5%;
+    background-color:#ffffff;
+    text-align:center;
+    font-size:2em;
+    color:#666633;
+    position:relative;
+    float:left;
+}
+
+.TopNav
+{
+    width:100%;
+    min-height:35px;
+    border:1px solid black;
+    background-color:#666633;
+    color:#ffffff;
+    position:relative;
+    float:left;
+}
+
+.menubar
+{
+    list-style:none;
+    margin-top:0px;
+}
+
+.menubar li
+{
+    position:relative;
+    float:left;
+    min-width:15%;
+    text-align:center;
+}
+
+.menubar a{text-decoration:none;display:block;min-height:35px;}
+
+.menubar a:visited{color:white;}
+.menubar a:link{color:white;}
+.menubar a:hover{color:#114b16;background-color:white;font-weight:bold;}
+.menubar a:active{color:#990033;}
+
+.selected
+{
+    background-color:#990033;
+    color:white;
+}
+
+.LeftNav
+{
+    width:19%;
+    padding:.5%;
+    min-height:900px;
+    background-color:#666633;
+    border-left:1px solid black;
+    color:#ffffff;
+    position:relative;
+    float:left;
+}
+
+.menuLeft
+{
+    list-style:none;
+    margin-top:0px;
+    padding-left:0px;
+    text-align:left;
+}
+
+.menuLeft li
+{
+    min-width:100%;
+    padding-top:1.2%;
+    padding-right:1.2%;
+    padding-bottom:1.2%;
+    border-bottom:1px solid #CECFCE
+}
+
+.menuLeft a{text-decoration:none;display:block;}
+
+.menuLeft a:visited{color:white;}
+.menuLeft a:link{color:white;}
+.menuLeft a:hover{color:#114b16;background-color:white;font-weight:bold;}
+.menuLeft a:active{color:white;}
+
+#content
+{
+    text-align:left;
+    color:#19640d;
+}
+
+#adoptContent
+{
+    font-weight:bold;
+    text-align:center;
+    font-size:1.5em;
+    color:#990033;
+}
+
+.animalName
+{
+    font-family:'Lucida Bright';
+    font-size:1.5em;
+    color:#226c5a;
+    text-align:left;
+}
+
+.list
+{
+    overflow:auto;
+}
+
+.pic
+{
+    padding:.5%;
+    position:relative;
+    float:left;
+}
+
+section article
+{
+    text-align:left;
+    padding:2%;
+    float:left;
+    position:relative;
+}
+
+.Fullsection
+{
+    width:97%;
+    min-height:700px;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:1.5%;
+    background-color:#ffffff;
+    color:#990033;
+    font-family:'Lucida Bright';
+    text-align:center;
+    position:relative;
+    float:left;
+}
+
+.Smallsection
+{
+    width:79.3%;
+    padding-left:.5%;
+    padding-bottom:1%;
+    min-height:900px;
+    font-size:1em;
+    text-align:left;
+    border-right:1px solid black;
+    background-color:#ffffff;
+    position:relative;
+    float:left;
+}
+
+.adoptSection
+{
+    width:79.3%;
+    padding-left:.5%;
+    padding-bottom:1%;
+    min-height:900px;
+    font-size:1em;
+    text-align:left;
+    border-right:1px solid black;
+    background-image:url("images/pinkGradient.jpg");
+    position:relative;
+    float:left;
+}
+
+ table thead
+{
+    border-bottom:1px solid black;
+}
+
+.table1
+{
+    border:1px solid black;
+    width:30%;
+    min-height:800px;
+    position:relative;
+    float:left;
+}
+
+.table2
+{
+    border:1px solid black;
+    width:35%;
+    min-height:800px;
+    position:relative;
+    float:left;
+}
+
+.table3
+{
+    border:1px solid black;
+    width:30%;
+    min-height:800px;
+    position:relative;
+    float:left;
+}
+
+.animalTable
+{
+    width:40%;
+    padding-left:2%;
+    position:relative;
+    float:left;
+    font-weight:bold;
+}
+
+.animalTable td
+{
+    border:solid black 1px;
+}
+
+#DivPhoto
+{
+    width:40%;
+    margin:auto;
+}
+
+#DivPhoto img
+{
+    width:100%;
+}
+
+#catsPhoto
+{
+    float:left;
+}
+
+footer
+{
+    width:97%;
+    min-height:50px;
+    border:1px solid black;
+    padding:1.5%;
+    text-align:center;
+    background-color:#ffffff;
+    position:relative;
+    float:left;
+}
