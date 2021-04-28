@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form 2 Example - Radio Buttons</title>
+    <script type="text/javascript">
+        function showImage(newImage)
+        {
+            document.getElementById("CoverPhoto").src = "images/" + newImage + ".PNG";
+        }
+
+    </script>
+</head>
+<body>
+    <h3>Radio Button Example</h3>
+    <form id="formForm2" action="form2.htm" method="post">
+        <table>
+            <tr>
+                <td>Select an option</td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>
+                            Nature 1:<input id="rbImage1" name="myImage"
+                                onclick="showImage(this.value);"
+                                type="radio" value="Nature1" />
+                        </li>
+                        <li>
+                            Nature 2:<input id="Radio2" name="myImage"
+                                onclick="showImage(this.value);" 
+                                type="radio" value="Nature2" />
+                        </li>
+                        <li>
+                            Nature 3:<input id="Radio3" name="myImage"
+                                onclick="showImage(this.value);" 
+                                type="radio" value="Nature3" />
+                        </li>
+                        <li>
+                            Nature 4:<input id="Radio4" name="myImage"
+                                onclick="showImage(this.value);" 
+                                type="radio" value="Nature4" />
+                        </li>
+                        <li>
+                            Nature 5:<input id="Radio5" name="myImage"
+                                onclick="showImage(this.value);" 
+                                type="radio" value="Nature5" />
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="CoverPhoto" src="" alt="Cover Photo" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

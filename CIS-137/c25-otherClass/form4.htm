@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>setTimeout example</title>
+    <script type="text/javascript">
+        function startTimer()
+        {
+            var timer = setTimeout("reDirectUser();", 5000);
+        }
+
+        function reDirectUser()
+        {
+            window.open('http://www.disney.com/','_self');
+        }
+    </script>
+</head>
+<body onload="startTimer();">
+    <h3>SetTimeout example</h3>
+    <form id="formForm4" action="form4.htm" method="post">
+        <input id="btnGo" type="button" onclick="startTimer();" 
+            value="Click here to go somewhere!" />
+    </form>
+</body>
+</html>

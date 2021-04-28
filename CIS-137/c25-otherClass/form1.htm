@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form Example 1</title>
+    <style type="text/css">
+        #ImageNature
+        {
+            visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        function showImage(newImage)
+        {
+            if (newImage == "blank")
+            {
+                document.getElementById("ImageNature").style.visibility = "hidden";
+            }
+            else
+            {
+                document.getElementById("ImageNature").style.visibility = "visible";
+                document.getElementById("ImageNature").src = "images/" + newImage;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Form Example 1</h3>
+    <form id="formForm1" method="post" action="form1.htm">
+        <table>
+            <tr>
+                <td>ListBox</td>
+                <td>
+                    <select id="ListBoxImages" size="3" onchange="showImage(this.value);">
+                        <option id="Image0" value="blank"> --Select an Image-- </option>
+                        <option id="Image1" value="Nature1.PNG">Desert</option>
+                        <option id="Image2" value="Nature2.PNG">Flowers</option>
+                        <option id="Image3" value="Nature3.PNG">Lighthouse</option>
+                        <option id="Image4" value="Nature4.PNG">Birds</option>
+                        <option id="Image5" value="Nature5.PNG">Da Bear!</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img id="ImageNature" src="" alt="An Image of Nature!" />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

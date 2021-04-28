@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Banner Ad Example</title>
+    <script type="text/javascript">
+        function displayAds()
+        {
+            var timer = setInterval("showBannerAd();", 5000);
+        }
+
+        function showBannerAd()
+        {
+            //Create a random number  (to get upper range - add together and subtract 1)
+            var myRandomNumber;
+            myRandomNumber = Math.floor(Math.random() * 5) + 1;  //RN between 1 and 5
+            //window.alert("Random Number is " + myRandomNumber);
+            document.getElementById("ImageBanner").src = "images/Nature" +
+                        myRandomNumber + ".PNG";
+        }
+    </script>
+</head>
+<body onload="displayAds();">
+    <h3>setInterval Example - with Random Number - Banner Ad Example</h3>
+    <img id="ImageBanner" src="" alt="Ad" />
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>setInterval Example!</title>
+    <style type="text/css">
+        body
+        {
+            font-family:Calibri,sans-serif;
+            font-size:medium;
+        }
+        #DivWrapper
+        {
+            width: 200px;
+            height: 100px;
+            border:1px solid black;
+        }
+    </style>
+    <script type="text/javascript">
+        function startTimer()
+        {
+            var timer = setTimeout("changeStuff();", 5000);
+        }
+
+        function changeStuff()
+        {
+            document.getElementById("Body").style.backgroundColor = "Yellow";
+            document.getElementById("DivWrapper").style.fontSize = "x-large";
+            document.getElementById("DivWrapper").style.color = "red";
+            document.getElementById("DivWrapper").style.position = "relative";
+            document.getElementById("DivWrapper").style.top = "50px";
+            document.getElementById("DivWrapper").style.left = "250px";
+        }
+    </script>
+</head>
+<body id="Body" onload="startTimer();">
+        <div id="DivWrapper">
+            setInterval Example!
+        </div>
+</body>
+</html>

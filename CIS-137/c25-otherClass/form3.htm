@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Checkbox example</title>
+    <script type="text/javascript">
+        function showHide()
+        {
+            if (document.getElementById("chkboxImage").checked == true)
+            {
+                if (navigator.appName == "Netscape")
+                {
+                    document.getElementById("ImageHere").src = "images/Nature1.PNG";
+                }
+                else
+                {
+                    document.getElementById("ImageHere").src = "images/Nature2.PNG";
+                }
+
+                document.getElementById("ImageHere").style.visibility = "visible";
+            }
+            else
+            {
+                document.getElementById("ImageHere").style.visibility = "hidden";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form id="formForm3" action="form3.htm" method="post" >
+        <table>
+            <tr>
+                <td>Show\Hide Image. Check to show Image.</td>
+            </tr>
+            <tr>
+                <td>Check to show image:
+                    <!-- <input id="Checkbox1" checked="checked" type="checkbox" /> -->
+                    <input id="chkboxImage" onclick="showHide();"
+                        type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="ImageHere" src="" alt="Image" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

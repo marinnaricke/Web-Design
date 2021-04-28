@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Random Number Example</title>
+    <script type="text/javascript">
+        function startInterval()
+        {
+            var timer = setInterval("showMessage();", 2000);
+        }
+
+        function showMessage()
+        {
+            //Create a random number  (to get upper range - add together and subtract 1)
+            var myRandomNumber;
+            //myRandomNumber = Math.floor(Math.random() * 5) + 1;  //RN between 1 and 5
+            myRandomNumber = Math.floor(Math.random() * 6) + 5;  //RN between 5 and 10
+            window.alert("Random Number is " + myRandomNumber);
+        }
+
+    </script>
+</head>
+<body>
+     <h3>setInterval Example - with Random Number</h3>
+     <form id="formForm4" action="form4.htm" method="post">
+         <input id="btnStart" type="button" value="Start" onclick="startInterval();" />
+     </form>
+</body>
+</html>

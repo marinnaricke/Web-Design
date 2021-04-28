@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>setTimeout example</title>
+    <script type="text/javascript">
+        function setAlarm(seconds)
+        {
+            if (seconds != "blank")   // not equal blank
+            {
+                // the number of seconds is passed from the listbox into the setTimeOut method
+                var timer = setTimeout("changeStuff();", seconds);
+            }
+        }
+
+        function changeStuff()
+        {
+            document.getElementById("DivWrapper").style.color = "Red";
+            document.getElementById("DivWrapper").style.backgroundColor = "Yellow";
+        }
+    </script>
+</head>
+<body>
+    <form id="formForm2" action="form2.htm" method="post">
+        <div id="DivWrapper">
+            setTimeout Example!
+        </div>
+        <select id="ListBoxTimer" size="3" onchange="setAlarm(this.value);">
+            <option id="Item1" value="blank"> --Select a time -- </option>
+            <option id="Item2" value="3000">3 seconds</option>
+            <option id="Item3" value="7000">7 seconds</option>
+            <option id="Item4" value="12000">12 seconds</option>
+         </select>
+    </form>
+</body>
+</html>

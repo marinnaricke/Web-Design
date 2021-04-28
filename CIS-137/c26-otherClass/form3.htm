@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>setInterval Example</title>
+    <script type="text/javascript">
+        function startInterval()
+        {
+            var timer = setInterval("showMessage();", 2000);
+        }
+
+        function showMessage()
+        {
+            // window.alert("Hello again!");
+            window.open('http://www.carrollcc.edu', '', 'width=200px, height=400px');
+        }
+
+    </script>
+</head>
+<body>
+     <h3>setInterval Example</h3>
+     <form id="formForm3" action="form3.htm" method="post">
+         <input id="btnStart" type="button" value="Start" onclick="startInterval();" />
+     </form>
+</body>
+</html>
