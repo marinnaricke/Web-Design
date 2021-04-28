@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Random Number Example</title>
+    <script type="text/javascript" src="scripts/random.js"></script>
+</head>
+<body>
+    <form id="formRandom" action="random.htm" method="post">
+        Start:<input id="TextBegin" type="text" /><p></p>
+        Range:<input id="TextRange" type="text" /><p></p>
+        <input id="ButtonRandom" type="button" 
+               value="Show random #" onclick="startInterval();" />
+        <input id="ButtonStop" type="button" value="Stop!"
+               onclick="stopInterval();" />
+        <input id="TextRandom" type="text" disabled="disabled"/>
+    </form>
+</body>
+</html>

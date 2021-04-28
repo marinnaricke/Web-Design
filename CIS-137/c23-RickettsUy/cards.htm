@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cards Example</title>
+    <script src="scripts/cards.js"></script>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="formCards" action="cards.htm" method="post">
+    <table>
+        <tr>
+            <td>
+                <img id="imageCard1" class="hideImage" src="" />
+            </td>
+            <td>
+                <img id="imageCard2"  class="hideImage" src="" />
+            </td>
+            <td>
+                <img id="imageCard3" class="hideImage" src="" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="button" value="Deal" onclick="getCards();" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input id="TextBoxTotal" type="text" disabled="disabled" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

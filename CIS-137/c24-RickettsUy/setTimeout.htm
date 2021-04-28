@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Class 24 -RickettsUy</title>
+    <style type="text/css">
+        #tarzan
+        {
+            height:20%;
+            width:20%;
+        }
+
+        #scaryGirl
+        {
+            height:80%;
+            width:80%;
+            visibility:hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        function startTimer()
+        {
+            timer = window.setTimeout("showPic()", 5000);
+            
+        }
+
+        function showPic()
+        {
+            document.getElementById("scaryGirl").style.visibility = "visible";
+            document.getElementById("tarzanDiv").style.display = "none";
+            document.getElementById("Audio1").src = "media/scream.mp3";
+        }
+    </script>
+</head>
+<body onload="startTimer();">
+    <audio id="Audio1" autoplay="autoplay">
+        <source id="Media1" src="media/Birdsong.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="tarzanDiv">
+        <img src="images/biggerTarzan.jpg" id="tarzan" />
+    </div>
+    <div id="scaryGirlDiv">
+        <img src="images/scary.jpg" id="scaryGirl" />
+    </div>
+</body>
+</html>

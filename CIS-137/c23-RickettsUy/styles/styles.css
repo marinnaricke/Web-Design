@@ -1,0 +1,40 @@
+﻿body 
+{
+    font-family:Calibri;
+    font-size:1em;
+}
+
+.hideImage
+{
+    visibility:hidden;
+}
+
+#Div1
+{
+    width:150px;
+    height:150px;
+    background-color:#ff0000;
+    position:absolute;
+    left:100px;
+    top:100px;
+}
+
+#Div2
+{
+    width:150px;
+    height:150px;
+    background-color:#00ff21;
+    position:absolute;
+    left:125px;
+    top:110px;
+}
+
+#Div3
+{
+    width:150px;
+    height:150px;
+    background-color:#ffd800;
+    position:absolute;
+    left:150px;
+    top:150px;
+}

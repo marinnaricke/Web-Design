@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Class 24 - RickettsUy</title>
+    <script type="text/javascript">
+        function startTimer()
+        {
+            timer = window.setInterval("movePic()", 1000);
+        }
+
+        function movePic()
+        {
+            var rnLeft;
+
+            rnLeft = Math.floor(Math.random() * 500) + 100;
+
+            document.getElementById("wonderWoman").style.position = "relative";
+            document.getElementById("wonderWoman").style.left = rnLeft + "px";
+        }
+    </script>
+</head>
+<body>
+    <img src="images/WonderWoman.JPG" onclick="startTimer();" id="wonderWoman" />
+</body>
+</html>
