@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mouse Move Example 1</title>
+    <style type="text/css">
+        #imagePhoto
+        {
+            visibility:hidden;
+        }
+
+        #DivShow
+        {
+            width:150px;
+            height:50px;
+            background-color:#ffd800;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function showImage()
+        {
+            document.getElementById("imagePhoto").style.visibility = "visible";
+            document.getElementById("imagePhoto").src = "images/Image1.JPG";
+        }
+
+        function hideImage()
+        {
+            document.getElementById("imagePhoto").style.visibility = "hidden";
+        }
+    </script>
+</head>
+<body>
+    <div id="DivShow" onmouseover="showImage();" onmouseout="hideImage();">
+        Show/Hide
+    </div>
+    <p></p>
+    <img id="imagePhoto" src="" alt="image" />
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Javascript Example</title>
+    <script type="text/javascript">
+        function hello()
+        {
+            var firstName = document.getElementById("TextBoxFirstName").value;
+            var lastName = document.getElementById("TextBoxLastName").value;
+            window.alert("Hello " + firstName + " " + lastName + "!");
+        }
+    </script>
+</head>
+<body>
+    <!--only one form element per page-->
+    <form id="formDefault" method="post" action="default.htm">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input id="TextBoxFirstName" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input id="TextBoxLastName" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input id="ButtonShow" onclick="hello();"
+                           type="button" value="Click Here!" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

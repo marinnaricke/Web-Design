@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Javascript Form examples</title>
+    <style type="text/css">
+        #imagePhoto{visibility:hidden;}
+
+    </style>
+
+    <script type="text/javascript">
+        function showImage(filename)
+        {
+            if (filename == "blank")
+            {
+                document.getElementById("imagePhoto").style.visibility="hidden";
+            }
+            else
+            {
+                document.getElementById("imagePhoto").style.visibility = "visible";
+                document.getElementById("imagePhoto").src = "images/" + filename;
+            }
+        }
+
+        function zoomImage()
+        {
+            if (document.getElementById("checkboxZoom").checked == true)
+            {
+                document.getElementById("imagePhoto").style.visibility = "visible";
+                document.getElementById("imagePhoto").style.width = "50%";
+            }
+            else
+            {
+                document.getElementById("imagePhoto").style.visibility = "visible";
+                document.getElementById("imagePhoto").style.width = "25%";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="formPhoto" method="post" action="photo.htm">
+        Choose an image: <br />
+        <select id="listPhotos" onchange="showImage(this.value);">
+            <option id="Image0" value="blank">--choose a photo--</option> 
+            <option id="Image1" value="Image1.jpg">Penguins</option>
+            <option id="Image2" value="Image2.jpg">Tulips</option>
+            <option id="Image3" value="Image3.jpg">Koala</option>
+            <option id="Image4" value="Image4.jpg">Chrysanthemum</option>
+            <option id="Image5" value="Image5.jpg">Desert</option>
+            <option id="Image6" value="Image6.jpg">Hydrangeas</option>
+        </select>
+        <p></p>
+        Zoom:
+        <input type="checkbox" id="checkboxZoom" onclick="zoomImage();" />
+        <img id="imagePhoto" src="" alt="photo"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿body
+{
+    font-family:Calibri, sans-serif;
+    font-size:1em;
+}
+
+.youTubeContainer
+{
+    width:70%;
+    margin:auto;
+    min-height:300px;
+    border:1px solid black;
+}
+
+.video
+{
+    width:70%;
+    min-height:250px;
+    padding:.5%;
+    border:5px solid red;
+    position:relative;
+    float:left;
+}

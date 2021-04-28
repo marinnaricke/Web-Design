@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #DivWrapper 
+        {
+            width:80%;
+            margin:auto;
+            min-height:525px;
+            border:1px solid black;
+        }
+        header 
+        {
+            width:100%;
+            min-height:99px;
+            text-align:center;
+            font-size:2em;
+            background-color:#B58AA5;
+        }
+
+        section 
+        {
+            width:96%;
+            padding:2%;
+            min-height:349px;
+            background-color:#ffffff;
+        }
+
+        #smallDiv
+        {
+            position:relative;
+            float:left;
+            min-height:100px;
+            min-width:100px;
+            background-color:red;
+        }
+
+        #bigDiv
+        {
+            position:relative;
+            float:left;
+            min-height:100px;
+            min-width:400px;
+            background-color:blue;
+        }
+
+        footer 
+        {
+            width:100%;
+            min-height:50px;
+            background-color:#B58AA5;
+        }
+    </style>
+    <script type="text/javascript">
+        function showBigDiv()
+        {
+            document.getElementById("bigDiv").style.visibility = "visible";
+            document.getElementById("smallDiv").style.backgroundColor = "blue";
+        }
+
+        function hideBigDiv()
+        {
+            document.getElementById("bigDiv").style.visibility = "hidden";
+            document.getElementById("smallDiv").style.backgroundColor = "red";
+        }
+    </script>
+</head>
+<body>
+    <div id="DivWrapper">
+        <header>
+            Div Blocks Example Class 21
+        </header>
+        <section>
+            <div id="smallDiv" onmouseover="showBigDiv();" onmouseout="hideBigDiv();"  >
+
+            </div>
+
+            <div id="bigDiv">
+
+            </div>
+
+        </section>
+        <footer>
+            CIS 137
+        </footer>
+    </div>
+</body>
+</html>

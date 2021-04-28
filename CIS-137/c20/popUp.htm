@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Popup Window Example</title>
+    <script type="text/javascript">
+        function openWindow()
+        {
+            window.open('http://www.carrollcc.edu' , '' ,'scrollbars=0, resizable=1, top=100px, left=100px, width=200px, height=200px');
+        }
+
+        function openMyWindow()
+        {
+            window.open('window.htm', '', 'scrollbars=0, resizable=1, top=100px, left=100px, width=200px, height=200px');
+        }
+    </script>
+</head>
+<body onload="openWindow();">
+    <h3>Popup main page!</h3>
+    <form id="formPopUp" action="popUp.htm" method="post">
+        <input type="button" value="Click Here!" onclick="openMyWindow();"/>
+    </form>
+</body>
+</html>

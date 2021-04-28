@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Order Form</title>
+    <script type="text/javascript">
+        function confirm(productSize)
+        {
+            window.alert("The Product size is: " + productSize);
+        }
+
+        function shipping(shipMethod)
+        {
+            window.alert("The Shipping method is: " + shipMethod);
+        }
+    </script>
+</head>
+<body>
+    <form id="formOrder" action="order.htm" method="post">
+        <table>
+            <tr>
+                <td>Choose a Product Size:</td>
+                <td>
+                    <input type="radio" id="RBSizeLarge" title="Large"
+                           onclick="confirm(this.title);"
+                           name="RBProductSize" value="L">Large
+                           <br />
+                    <input type="radio" id="RBSizeMedium" title="Medium"
+                           onclick="confirm(this.title);"
+                           name="RBProductSize" value="M">Medium
+                           <br />
+                    <input type="radio" id="RBSizeSmall" title="Small"
+                           onclick="confirm(this.title);"
+                           name="RBProductSize" value="S">Small
+                           <br />
+                </td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>
+                    <select size="6" onclick="shipping(this.value);">
+                        <option value="Fedex" selected="selected">Fedex</option>
+                        <option value="UPS">UPS</option>
+                        <option value="USMail">U.S. Mail</option>
+                        <option value="Pickup">Personal Pickup</option>
+
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
