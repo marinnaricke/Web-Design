@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web03-RickettsUy</title>
+    <link href="styles/styles.css" rel="stylesheet" media="screen" />
+    <link href="styles/print.css" rel="stylesheet" media="print" />
+    <script src="JavaScripts/cats.js"></script>
+    <!---->
+    <!--2 DropDown Lists on this page-->
+    <!---->
+</head>
+<body>
+    <div id="DivWrapper">
+        <header>
+            <div id="DivLogo">
+                <img src="images/smallLogo.jpg" />
+            </div>
+            Loveable Animals Adoption/ Rescue Shelter
+        </header>
+        <nav class="TopNav">
+            <ul class="menubar">
+                <li><a href="default.htm">Home</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="hours.htm">Hours</a></li>
+                <li><a href="about.htm">About us</a></li>
+                <li><a href="events.htm">Upcoming Events</a></li>
+                <li><a href="adopt.htm" class="selected">Adopt</a></li>
+                <li><a href="care.htm">Care</a></li>
+            </ul>
+        </nav>
+        <nav class="LeftNav">
+            Adoptable Animals
+            <p></p>
+            <ul class="menuLeft">
+                <li><a href="dogs.htm">Adoptable Dogs</a></li>
+                <li><a href="cats.htm" class="selected">Adoptable Cats</a></li>
+            </ul>
+        </nav>
+        <section class="Smallsection">
+            <p></p>
+            <form id="formCatAdopt" action="cats.htm" method="post">
+                <b>Gender:</b>
+                <select id="listCatGender" onchange="showGender(this.value);">
+                    <option value="a">All</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+                &nbsp;&nbsp;
+                <b>Age:</b>
+                <select id="listCatAge" onchange="showAge(this.value);">
+                    <option value="all">All</option>
+                    <option value="o">Over 2 year</option>
+                    <option value="u">Under 2 year</option>
+                </select>
+                <p></p>
+                <div id="allCatTable">
+                    <table class="table1">
+                        <tr>
+                            <td>
+                                <a href="CatInfo/precious.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat1thumb.jpg" alt="tabby" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/simba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/hazel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat6thumb.jpg" alt="brownTabby" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/caramel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat13thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/kimba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat17thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/phoenix.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat7thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/fuzzball.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat3thumb.jpg" alt="persian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/tubsTiger.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat4thumb.jpg" alt="siamese and calico" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/skunk.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat14thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/demi.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat18thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/kittyPurry.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat5thumb.jpg" alt="Tom" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/abby.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat8thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!---->
+                                <!--THIS IS MY CAT-->
+                                <!---->
+                                <a href="CatInfo/boots.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat10thumb.jpg" alt="shorthair cat" />
+                                </a>        
+                            </td>
+                            <td>
+                                <a href="CatInfo/catNip.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat11thumb.jpg" alt="shorthair cat" />
+                                </a>                           
+                            </td>
+                            <td>
+                                <a href="CatInfo/pepper.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat12thumb.jpg" alt="shorthair cat" />
+                                </a>                        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/whiskers.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat15thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/cole.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat16thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <!---->
+                                <!--THIS IS MY CAT-->
+                                <!---->
+                                <a href="CatInfo/riley.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat9thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="maleCatTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="CatInfo/phoenix.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat7thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/fuzzball.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat3thumb.jpg" alt="persian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/caramel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat13thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/whiskers.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat15thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/kittyPurry.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat5thumb.jpg" alt="Tom" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/catNip.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat11thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/skunk.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat14thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/cole.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat16thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="femaleCatTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="CatInfo/precious.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat1thumb.jpg" alt="tabby" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/simba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/hazel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat6thumb.jpg" alt="brownTabby" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/abby.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat8thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/riley.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat9thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/boots.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat10thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/pepper.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat12thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/kimba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat17thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/demi.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat18thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="overCatTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="CatInfo/simba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/hazel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat6thumb.jpg" alt="brownTabby" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/phoenix.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat7thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/cole.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat16thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/boots.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat10thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/demi.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat18thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/caramel.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat13thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/skunk.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat14thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/kimba.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat17thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="underCatTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="CatInfo/precious.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat1thumb.jpg" alt="tabby" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/fuzzball.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat3thumb.jpg" alt="persian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/tubsTiger.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat4thumb.jpg" alt="siamese and calico" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/kittyPurry.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat5thumb.jpg" alt="Tom" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/abby.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat8thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/riley.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat9thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CatInfo/catNip.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat11thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/pepper.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat12thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="CatInfo/whiskers.htm">
+                                    <img src="images/adoptCatsThumb/adoptcat15thumb.jpg" alt="shorthair cat" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </form>
+         </section>
+        <footer>
+            <img src="images/copyrightSymbol.gif" />
+            2014. Loveable Animals Adoption/ Rescue Shelter all rights reserved
+        </footer>
+    </div>
+</body>
+</html>

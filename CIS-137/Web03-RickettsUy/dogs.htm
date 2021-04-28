@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web03-RickettsUy</title>
+    <link href="styles/styles.css" rel="stylesheet" media="screen" />
+    <link href="styles/print.css" rel="stylesheet" media="print" />
+    <script src="JavaScripts/dogs.js"></script>
+    <!---->
+    <!--2 DropDown Lists on this page-->
+    <!---->
+</head>
+<body>
+    <div id="DivWrapper">
+        <header>
+            <div id="DivLogo">
+                <img src="images/smallLogo.jpg" />
+            </div>
+            Loveable Animals Adoption/ Rescue Shelter
+        </header>
+        <nav class="TopNav">
+            <ul class="menubar">
+                <li><a href="default.htm">Home</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="hours.htm">Hours</a></li>
+                <li><a href="about.htm">About us</a></li>
+                <li><a href="events.htm">Upcoming Events</a></li>
+                <li><a href="adopt.htm" class="selected">Adopt</a></li>
+                <li><a href="care.htm">Care</a></li>
+            </ul>
+        </nav>
+        <nav class="LeftNav">
+            Adoptable Animals
+            <p></p>
+            <ul class="menuLeft">
+                <li><a href="dogs.htm" class="selected">Adoptable Dogs</a></li>
+                <li><a href="cats.htm">Adoptable Cats</a></li>
+            </ul>
+        </nav>
+        <section class="Smallsection">
+            <p></p>
+            <form id="formDogAdopt" action="dogs.htm" method="post">
+                <b>Gender:</b>
+                <select id="listGender" onchange="showGender(this.value);">
+                    <option value="a">All</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+                &nbsp;&nbsp;
+                <b>Age:</b>
+                <select id="listAge" onchange="showAge(this.value);">
+                    <option value="all">All</option>
+                    <option value="o">Over 2 year</option>
+                    <option value="u">Under 2 year</option>
+                </select>
+            <p></p>
+                <div id="allTable">
+                    <table class="table1">
+                        <tr>
+                            <td>
+                                <a href="DogInfo/sasha.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog1thumb.jpg" alt="lab" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/lucky.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/fred.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog3thumb.jpg" alt="basset hound" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/lexy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog8thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/shane.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog15thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/fluffy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog4thumb.jpg" alt="bichon" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/khloe.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog5thumb.jpg" alt="yorkiepoo" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/chocolate.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog9thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/spot.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog6thumb.jpg" alt="dalmatian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/jake.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog7thumb.jpg" alt="border collie" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/tina.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog11thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/reggie.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog10thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/scout.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog12thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/rex.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog13thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/clover.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog14thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/zeus.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog16thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div id="maleTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="DogInfo/lucky.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/fred.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog3thumb.jpg" alt="basset hound" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/shane.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog15thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/reggie.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog10thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/spot.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog6thumb.jpg" alt="dalmatian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/jake.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog7thumb.jpg" alt="border collie" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/rex.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog13thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/zeus.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog16thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                <div id="femaleTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="DogInfo/sasha.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog1thumb.jpg" alt="lab" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/fluffy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog4thumb.jpg" alt="bichon" />
+                                </a>
+                            </td>
+                            <td>
+                                <!---->
+                                <!--THIS IS MY DOG!!!-->
+                                <!---->
+                                <a href="DogInfo/khloe.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog5thumb.jpg" alt="yorkiepoo" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/lexy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog8thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/tina.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog11thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/scout.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog12thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/clover.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog14thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/chocolate.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog9thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="overTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="DogInfo/fred.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog3thumb.jpg" alt="basset hound" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/shane.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog15thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <!---->
+                                <!--THIS IS MY DOG-->
+                                <!---->
+                                <a href="DogInfo/khloe.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog5thumb.jpg" alt="yorkiepoo" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/lexy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog8thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/spot.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog6thumb.jpg" alt="dalmatian" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/rex.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog13thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/clover.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog14thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/chocolate.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog9thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="underTable">
+                    <table class="table2">
+                        <tr>
+                            <td>
+                                <a href="DogInfo/sasha.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog1thumb.jpg" alt="lab" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/lucky.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog2thumb.jpg" alt="husky" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/fluffy.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog4thumb.jpg" alt="bichon" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/reggie.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog10thumb.jpg" alt="pitbull" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DogInfo/jake.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog7thumb.jpg" alt="border collie" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/tina.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog11thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/scout.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog12thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="DogInfo/zeus.htm">
+                                    <img src="images/adoptDogsThumb/adoptdog16thumb.jpg" alt="pitbull mix" />
+                                </a>
+                            </td>
+                         </tr>
+                    </table>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <img src="images/copyrightSymbol.gif" />
+            2014. Loveable Animals Adoption/ Rescue Shelter all rights reserved
+        </footer>
+    </div>
+</body>
+</html>

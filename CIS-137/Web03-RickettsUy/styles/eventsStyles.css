@@ -1,0 +1,10 @@
+﻿#holidayBackground
+{
+    background-image:url("../images/holidayBackground.jpg");
+}
+
+#holidayHeading
+{
+    font-family:'Curlz MT';
+    font-size:2em;
+}
